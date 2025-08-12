@@ -1376,7 +1376,7 @@
                         <!-- 第二个职位的按钮 -->
                         <div class="job-preview-actions">
                             <button class="btn btn-mini" onclick="showJobDetail('job2')">查看详情</button>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScK5PysCv3_RMRZbLOFNFunO4qM4C1Xdx9NkX5G5ScGtLLtow/viewform?usp=pp_url&entry.1234567890=神经外科诊所招聘神外和脊椎外科医生" 
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScK5PysCv3_RMRZbLOFNFunO4qM4C1Xdx9NkX5G5ScGtLLtow/viewform" 
                                target="_blank" 
                                class="btn btn-outline btn-mini">立即申请</a>
                         </div>
@@ -1413,7 +1413,7 @@
                         </div>
                         <div class="job-preview-actions">
                             <button class="btn btn-mini" onclick="showJobDetail('job3')">查看详情</button>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScK5PysCv3_RMRZbLOFNFunO4qM4C1Xdx9NkX5G5ScGtLLtow/viewform?usp=pp_url&entry.1234567890=示例：普外科副主任医师" 
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScK5PysCv3_RMRZbLOFNFunO4qM4C1Xdx9NkX5G5ScGtLLtow/viewform" 
                                target="_blank" 
                                class="btn btn-outline btn-mini">立即申请</a>
                         </div>
@@ -1874,18 +1874,6 @@ function showJobDetail(jobId) {
         document.getElementById('jobDetailContent').innerHTML = job.description;
         document.getElementById('jobDetailModal').style.display = 'block';
     }
-}
-
-// Google Forms申请函数 - 新增
-function showApplicationForm(jobId) {
-    const formUrls = {
-        'job1': 'https://docs.google.com/forms/d/e/1FAIpQLScK5PysCv3_RMRZbLOFNFunO4qM4C1Xdx9NkX5G5ScGtLLtow/viewform?usp=pp_url&entry.FIELD_ID=放射肿瘤科助理医师',
-        'job2': 'https://docs.google.com/forms/d/e/1FAIpQLScK5PysCv3_RMRZbLOFNFunO4qM4C1Xdx9NkX5G5ScGtLLtow/viewform?usp=pp_url&entry.FIELD_ID=神经外科诊所招聘神外和脊椎外科医生',
-        'job3': 'https://docs.google.com/forms/d/e/1FAIpQLScK5PysCv3_RMRZbLOFNFunO4qM4C1Xdx9NkX5G5ScGtLLtow/viewform?usp=pp_url&entry.FIELD_ID=示例：普外科副主任医师'
-    };
-    
-    const url = formUrls[jobId] || 'https://docs.google.com/forms/d/e/1FAIpQLScK5PysCv3_RMRZbLOFNFunO4qM4C1Xdx9NkX5G5ScGtLLtow/viewform';
-    window.open(url, '_blank');
 }
 
 // 关闭模态框 - 现在只需要处理详情模态框
